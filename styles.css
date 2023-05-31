@@ -143,17 +143,16 @@ body {
  
 }
 
+.container-center .header-gif {
+  max-width: 250px;
+  max-height: 250px;
+ 
+}
+
 .header .header-img {
   max-width: 250px;
   max-height: 250px;
-  border-radius: 50%;
-  float: right; 
-}
-
-.header .header-gif {
-  max-width: 250px;
-  max-height: 250px;
-   
+   border-radius: 50%;
 
 }
 
