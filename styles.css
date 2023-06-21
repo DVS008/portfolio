@@ -139,8 +139,6 @@ body {
 .header {
   padding: 4rem;
   text-align: center;
-  
- 
 }
 
 .container-center .header-gif {
@@ -158,12 +156,12 @@ body {
 
 
 .header .header-heading {
-  font-size: 50px;
+  font-size: 30px;
   color: var(--dark-grey);
 }
 
 .header-heading-inverted {
-  font-size: 50px;
+  font-size: 30px;
   color: var(--primary-color);
 }
 
