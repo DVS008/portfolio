@@ -11,7 +11,7 @@
 body {
   background-color: var(--white);
   font-family: "Roboto", sans-serif;
-  margin: 0rem;
+  margin: 0;
 }
 
 .heading-grey {
@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  padding: 0rem 2rem;
+  padding: 0 2rem;
 }
 
 .container-center {
@@ -60,7 +60,7 @@ body {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: 0.5rem;
-  margin: 4rem 0rem;
+  margin: 4rem 0;
 }
 
 .link-secondary-spacing {
@@ -90,20 +90,21 @@ body {
 
 .list-item-inline {
   display: inline;
-  padding: 0rem 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .navigation {
   background-color: var(--primary-color);
   color: var(--off-white);
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation .nav-brand {
   font-weight: bold;
   font-size: 30px;
-  float:left
-  
 }
 
 .nav-brand a {
@@ -144,24 +145,21 @@ body {
 .container-center .header-gif {
   max-width: 250px;
   max-height: 250px;
- 
 }
 
 .header .header-img {
   max-width: 250px;
   max-height: 250px;
-   border-radius: 50%;
-
+  border-radius: 50%;
 }
 
-
 .header .header-heading {
-  font-size: 30px;
+  font-size: 50px;
   color: var(--dark-grey);
 }
 
 .header-heading-inverted {
-  font-size: 30px;
+  font-size: 50px;
   color: var(--primary-color);
 }
 
@@ -211,6 +209,68 @@ body {
 
 .social-links {
   text-align: center;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
   margin: 1.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation .nav-pills {
+    display: inline;
+  }
+  
+
+  
+
+  .header .header-heading,
+  .header-heading-inverted {
+    font-size: 35px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .link,
+  .link-secondary {
+    font-size: 16px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .footer-header {
+    font-size: 24px;
+  }
+
+  .footer .link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .header-heading,
+  .header-heading-inverted {
+    font-size: 28px;
+  }
+
+  .link,
+  .link-secondary {
+    font-size: 14px;
+    padding: 0.25rem 0.5rem;
+  }
+  .section {
+    padding: 0.5rem;
+  }
+
+  .footer-header {
+    font-size: 20px;
+  }
+
+  .footer .link {
+    font-size: 16px;
+    display: inline;
+  }
 }
